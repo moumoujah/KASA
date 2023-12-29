@@ -1,0 +1,19 @@
+.section_error{
+    color: #FF6060;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section_error div{
+    margin: 50px;
+}
+.section_error a{
+    color: #FF6060;
+}
+.chiffre{
+    font-weight: 700;
+    font-size: 288px;
+}
+.oups{
+    font-size: 36px;
+}
