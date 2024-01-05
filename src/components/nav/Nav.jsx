@@ -1,11 +1,12 @@
+import { NavLink } from 'react-router-dom';
 import './nav.css';
 
 function Nav() {
     return (
     <nav className='NavHeader'>
         <ul>
-            <li>Accueil</li>
-            <li>A Propos</li>
+            <NavLink>Accueil</NavLink>
+            <NavLink>A Propos</NavLink>
         </ul>
        
 </nav>)

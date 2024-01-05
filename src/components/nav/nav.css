@@ -1,8 +1,10 @@
 .NavHeader ul{
-    list-style-type: none;
     display: flex;
     gap: 57px;
-    color: #FF6060;
-    font-size: 24px;
+}
+.NavHeader a{
+    list-style-type: none;
+    color: var(--colorRed);
+    font-size: var( --fontSize24);
 
 }

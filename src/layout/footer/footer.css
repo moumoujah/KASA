@@ -1,14 +1,14 @@
 footer{
     height: 209px;
-    background-color: black;
-    color: white;
+    background-color: var(--colorBlack);
+    color: var(--colorwhite);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 }
 footer img{
     height: 40px;
     width: 122px;
-
 }
