@@ -4,7 +4,13 @@
 }
 .NavHeader a{
     list-style-type: none;
+    text-decoration: none;
     color: var(--colorRed);
     font-size: var( --fontSize24);
+
+}
+.NavHeader a.active{
+    
+    text-decoration: underline;
 
 }

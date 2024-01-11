@@ -5,8 +5,8 @@ function Nav() {
     return (
     <nav className='NavHeader'>
         <ul>
-            <NavLink>Accueil</NavLink>
-            <NavLink>A Propos</NavLink>
+            <NavLink to ='/' end  className={({ isActive }) =>isActive ? "active" : ""}> Accueil</NavLink>
+            <NavLink to ='/about' className={({ isActive }) =>isActive ? "active" : ""}> A Propos</NavLink>
         </ul>
        
 </nav>)

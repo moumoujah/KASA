@@ -6,6 +6,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
+    font-size: var(--fontSize24);
    
 }
 footer img{

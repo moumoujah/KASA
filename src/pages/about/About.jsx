@@ -1,9 +1,10 @@
 import React from 'react';
+import './About.css';
 import Header from '../../layout/header/Header.jsx';
-import ImgSect from "../../assets/Home.png" ;
+import ImgSect from "../../assets/About.png" ;
 import Footer from '../../layout/footer/Footer.jsx';
-import Gallery from '../../components/gallery/Gallery.jsx'
-function Home() {
+
+function About() {
 
     
     return (
@@ -12,12 +13,11 @@ function Home() {
         <Header />
         <section className='Hero'>
          <img src={ImgSect} alt='Images'/>
-         <p>Chez vous, partout et ailleurs</p>
         </section>
-        <Gallery />
+       
       </div>
         <Footer />
     </div>)
 }
 
-export default Home
+export default About

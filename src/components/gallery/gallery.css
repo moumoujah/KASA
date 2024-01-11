@@ -1,0 +1,10 @@
+.containerCard{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    background-color: var(--colorGrey);
+    padding: 50px;
+    margin: 30px 0px;
+    justify-content: center;
+    border-radius: 25px;
+}
