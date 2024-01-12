@@ -1,14 +1,15 @@
 import './card.css'
+import { Link } from "react-router-dom";
 
-
-function card() {
-    return (
-        
-      <div className='card'>
-       
-    </div>)
-    
+function Card({ title, cover, key }) {
+  return (
+    <Link to={`/logement${key}`} className='card'>
+          <img src={cover} alt="Pictur" />
+        <div className='overlayCard'>
+        <h6> {title}</h6>
+        </div>
+    </Link>
+  )
 }
 
-
-export default card
+export default Card
