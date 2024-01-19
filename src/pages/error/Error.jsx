@@ -10,7 +10,7 @@ function Error() {
       <div className='Main'>
         <Header />
         <section className='section_error'>
-        <div className='chiffre'>404</div>
+        <h1 className='chiffre'>404</h1>
         <div className='oups'>Oups! La page que vous demandez n'existe pas.</div>
         <Link to ="/" >Retourner sur la page d'accueil</Link>
         </section>

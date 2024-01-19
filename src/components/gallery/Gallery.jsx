@@ -1,4 +1,4 @@
-import { getAllLogements} from '../../services/logements'
+import { getAllLogements } from '../../services/logements'
 import Card from '../card/Card'
 import './gallery.css'
 
@@ -8,9 +8,10 @@ function gallery() {
     return (
         
         <div className='containerCard'>
-       {logements.map(e =>{
+       {logements && logements.map(e =>{
      return (
         <Card
+        id={e.id}
         key={e.id}
         title={e.title}
         cover={e.cover}
