@@ -41,13 +41,14 @@ function Logement({}) {
       <div>
       <h2> {logement.title}</h2> 
       <h4>{logement.location}</h4>
-     <div>
-      {logement.tags.map(tag => (<div key={tag}>{tag}</div>))}
+     <div className='containerTagLogement'>
+      {logement.tags.map(tag => (<div className='tagLogement' key={tag}>{tag}</div>))}
      </div>
       </div>
       <div>
         <p>{logement.host.name}</p>
         <img src={logement.host.picture} alt="" />
+        
       </div>
       </section>
       

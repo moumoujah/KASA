@@ -1,3 +1,9 @@
+.NavHeader{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
 .NavHeader ul{
     display: flex;
     gap: 57px;

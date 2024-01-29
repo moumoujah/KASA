@@ -40,7 +40,7 @@ time, mark, audio, video {
     font-weight: 500;
 }
 .Main{
-    max-width: 1400px;
+    max-width: 1240px;
     margin: auto;
 }
 body{
@@ -51,7 +51,7 @@ body{
 .Hero{
     height: 223px;
     overflow: hidden;
-    margin-top: 30px;
+    margin-bottom: 40px;
     position: relative;
     width: 100%;
 }
@@ -64,11 +64,12 @@ body{
 }
 .Hero p{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 35%;
     color: var(--colorwhite);
     font-size: 48px;
-    transform: translate(-50%, -50%);
     margin: 0px;
     line-height : 68.45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
  }
