@@ -16,11 +16,6 @@ function Logement({}) {
   const { id } = useParams();
   const navigate = useNavigate();
   const [logement, setLogement] = useState(null)
-  
-
-//   const ListEquipments = logement.equipments.map(equipment => (
-//     <div key={equipment}>{equipment}</div>
-// ));
 
   useEffect(() => {
     const searchLogement = getLogementById(id)
@@ -32,7 +27,9 @@ function Logement({}) {
     
     
   },[id]);
-
+   
+  const starCount = [1,2,3,4,5];
+     
   
     return (
       <div className='Home'> 
@@ -57,6 +54,12 @@ function Logement({}) {
         <p>{logement.host.name}</p>
         <img src={logement.host.picture} alt="" />
       </div>
+      <div className="containerStarLogement">
+             {starCount.map((star) =>
+             logement.rating >= star ? 
+             (<img key={star} src={starActive} alt="star completed" />) : (<img key={star} src={starInactive} alt="star not completed" />)
+             )}
+         </div>
       </section>
       <section className='sectionCollapseLogement'>
       <Collapse
