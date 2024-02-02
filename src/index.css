@@ -39,9 +39,12 @@ time, mark, audio, video {
     font-family: "Montserrat";
     font-weight: 500;
 }
+
 .Main{
-    max-width: 1240px;
-    margin: auto;
+    /* max-width: 1240px;
+    margin: auto; */
+   
+    margin: 0% 7%;
 }
 body{
     margin: 0px;

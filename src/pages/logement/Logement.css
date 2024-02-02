@@ -1,4 +1,4 @@
-.title-host-Logements{
+.sectionHostTagPicture{
     color: var(--colorRed);
     display: flex;
     justify-content: space-between;
@@ -6,15 +6,16 @@
 
 }
 
-.title-host-Logements h2{
+.sectionHostTagPicture h2{
     font-size: var( --fontSize36);
 
 }
-.title-host-Logements h4{
+.sectionHostTagPicture h4{
     font-size: var( --fontSize18);
+    margin: 5px 0px 0px 0px;
 
 }
-.tagLogement{
+.tag{
     background-color: var(--colorRed);
     color: var(--colorwhite);
     border-radius: 10px;
@@ -22,17 +23,22 @@
     padding: 5px 20px;
 
 }
-.containerTagLogement{
+.TagsLogement{
     gap: 10px;
     display: flex;
 
 }
+.containerHostTags{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
 
-.name-picture-rating{
+.name-picture{
     display: flex;
     
 }
-.name-picture-rating img{
+.name-picture img{
     border-radius: 50%;
     height: 64px;
     
@@ -41,7 +47,14 @@
     display: flex;
     gap: 75px;
 }
-.containerStarLogement{
+.StarLogement{
     height: fit-content;
+    text-align: right;
+
+}
+.containerNamePictureStar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }

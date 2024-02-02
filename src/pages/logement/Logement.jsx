@@ -32,49 +32,52 @@ function Logement({}) {
      
   
     return (
-      <div className='Home'> 
-        <div className='Main'>
+    <div className='Home'> 
+      <div className='Main'>
         <Header />
         
-          {logement && (
+      {logement && (
             
-      <div  key={logement.id}>
-        <Slideshow
-         pictures={logement.pictures}
-        />
-      <section className='title-host-Logements'>
-      <div>
-      <h2> {logement.title}</h2> 
-      <h4>{logement.location}</h4>
-     <div className='containerTagLogement'>
-      {logement.tags.map(tag => (<div className='tagLogement' key={tag}>{tag}</div>))}
-     </div>
-      </div>
-      <div className='name-picture-rating'>
-        <p>{logement.host.name}</p>
-        <img src={logement.host.picture} alt="" />
-      </div>
-      <div className="containerStarLogement">
-             {starCount.map((star) =>
-             logement.rating >= star ? 
-             (<img key={star} src={starActive} alt="star completed" />) : (<img key={star} src={starInactive} alt="star not completed" />)
-             )}
-         </div>
-      </section>
-      <section className='sectionCollapseLogement'>
-      <Collapse
-       title="Description"
-       content={logement.description}
-   />
-   
-    <Collapse
-       title="Équipements"
-       content={logement.equipments.map(equipment => (<div key={equipment}>{equipment}</div>))} 
-   />
-   </section>
-   
+        <div  key={logement.id}>
+           <Slideshow
+            pictures={logement.pictures}
+           />
+         <section className='sectionHostTagPicture'>
+           <div className='containerHostTags'>
+            <div>
+             <h2> {logement.title}</h2> 
+             <h4>{logement.location}</h4>
+             </div>
+             <div className='TagsLogement'>
+               {logement.tags.map(tag => (<div className='tag' key={tag}>{tag}</div>))}
+             </div>
+           </div>
+             <div className='containerNamePictureStar'>
+               <div className='name-picture'>
+                <p>{logement.host.name}</p>
+                <img src={logement.host.picture} alt="" />
+               </div>
+               <div className="StarLogement">
+                    {starCount.map((star) =>
+                    logement.rating >= star ? 
+                    (<img key={star} src={starActive} alt="star completed" />) : (<img key={star} src={starInactive} alt="star not completed" />)
+                    )}
+               </div>
+             </div>
+         </section>
+         <section className='sectionCollapseLogement'>
+           <Collapse
+            title="Description"
+            content={logement.description}
+           />
+           <Collapse
+            title="Équipements"
+            content={logement.equipments.map(equipment => (<div key={equipment}>{equipment}</div>))} 
+            />
+         </section>
+     
 
-      </div>
+        </div>
 )}
        
       </div>
