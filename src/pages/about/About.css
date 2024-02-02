@@ -1,8 +1,8 @@
-.sectionCollapse{
+.sectionCollapseAbout{
     width: 100%;
     gap: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 35px;
+    
 }

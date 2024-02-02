@@ -1,3 +1,48 @@
-.containerLogements{
+.title-host-Logements{
     color: var(--colorRed);
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+
+}
+
+.title-host-Logements h2{
+    font-size: var( --fontSize36);
+
+}
+.title-host-Logements h4{
+    font-size: var( --fontSize18);
+
+}
+.tagLogement{
+    background-color: var(--colorRed);
+    color: var(--colorwhite);
+    border-radius: 10px;
+    font-size: var( --fontSize14);
+    padding: 5px 20px;
+
+}
+.containerTagLogement{
+    gap: 10px;
+    display: flex;
+
+}
+
+.name-picture-rating{
+    display: flex;
+    
+}
+.name-picture-rating img{
+    border-radius: 50%;
+    height: 64px;
+    
+}
+.sectionCollapseLogement{
+    display: flex;
+    gap: 75px;
+}
+
+.containerStarLogement{
+    height: fit-content;
+
 }

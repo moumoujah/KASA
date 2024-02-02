@@ -15,21 +15,17 @@ function About() {
         <Header />
         <section className='Hero'>
          <img src={ImgSect} alt='Images'/>
-         
-
         </section>
-        <section className='sectionCollapse'>
+        <section className='sectionCollapseAbout'>
+
         {About && About.map(e =>{
      return (
-      
         <Collapse
         id={e.id}
         key={e.id}
         title={e.title}
         content={e.content}
     />
-    
-        
     )
 })}</section>
        
