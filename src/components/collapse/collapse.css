@@ -17,7 +17,9 @@
 .collapseTitle {
     font-weight: 500;
     color: white;
-    font-size: 24px;
+    font-size: var( --fontSize24);
+    display: flex;
+    align-items: center;
 }
     
 .collapseArrow{
@@ -36,6 +38,7 @@
     transform: rotate(0deg);
     transition: transform 0.2s ease;
 }
+
 .rotateArrow img {
     transform: rotate(-180deg);
 }
@@ -45,7 +48,6 @@
     overflow: hidden;
     max-height: 0;
     color:  var(--colorRed);
-    
 }
 
 .content.down {
@@ -54,3 +56,24 @@
     padding: 15px;
 }
 
+@media screen and (max-width: 768px) {
+    .collapseContainer{
+        width: 100%;
+    }
+    .collapse {
+        height: 30px;
+        padding: 0px 10px;
+    }
+    .collapseTitle {
+        height: 30px;
+        font-size: var( --fontSize13);
+    }
+    .collapse img{
+        width: var( --fontSize16);
+    }
+    .content.down {
+        font-size: var( --fontSize12);
+        padding: 10px;
+    }
+
+}

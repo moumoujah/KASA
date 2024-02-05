@@ -1,5 +1,5 @@
 footer{
-    height: 209px;
+    height: 175px;
     background-color: var(--colorBlack);
     color: var(--colorwhite);
     display: flex;
@@ -7,12 +7,26 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 50px;
-    font-size: var(--fontSize24);
     padding: 35px 0px 0px 0px;
     margin-top: 50px;
-   
 }
+
 footer img{
-    height: 40px;
     width: 122px;
+}
+footer p{
+    font-size: var(--fontSize24);
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        margin-top: 20px;
+        font-size: var(--fontSize12);
+        gap: 10px;
+    }
+    footer p{
+        font-size: var(--fontSize12);
+        width: 123px;
+        text-align: center;
+    }
 }

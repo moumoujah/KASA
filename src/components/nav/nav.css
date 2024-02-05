@@ -8,15 +8,26 @@
     display: flex;
     gap: 57px;
 }
+
 .NavHeader a{
     list-style-type: none;
     text-decoration: none;
     color: var(--colorRed);
     font-size: var( --fontSize24);
-
 }
-.NavHeader a.active{
-    
-    text-decoration: underline;
 
+.NavHeader a.active{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-banner img{
+        width: 145px;
+    }
+    .NavHeader a{
+        font-size: var( --fontSize12);
+    }
+    .NavHeader ul{
+        gap: 26px;
+    }
 }

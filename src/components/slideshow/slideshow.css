@@ -8,11 +8,13 @@
     position: absolute;
     top: 40%;
 }
+
 .arrowLeft{
     left: 23px;
     position: absolute;
     top: 40%;
 }
+
 .arrowNone {
     display: none;
 } 
@@ -23,10 +25,31 @@
     object-fit: cover;
     border-radius: 25px;
 }
+
 .counterPicture{
     position: absolute;
     bottom: 15px;
     color: white;
     left: 50%;
     font-size: var( --fontSize18);
+}
+
+@media screen and (max-width: 768px) {
+    .slideshow{
+        height: 255px;
+    }
+    .arrowRight , .arrowLeft{
+        width: 12px;
+        top: 45%;
+    }
+    .img_Slideshow{
+        border-radius: 10px;
+        height: 255px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .counterPicture{
+        display: none;
+    }
 }
