@@ -1,6 +1,7 @@
 .card{
     position: relative;
     border-radius: 10px;
+    height: 23vw;
 }
 
 .card img {

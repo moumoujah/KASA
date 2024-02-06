@@ -29,7 +29,6 @@ function Logement({}) {
   },[id]);
    
   const starCount = [1,2,3,4,5];
-     
   
     return (
     <div className='Home'> 

@@ -11,7 +11,7 @@
 
 .sectionHostTagPicture h4{
     font-size: var( --fontSize18);
-    margin: 5px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
 }
 
 .tag{
@@ -36,11 +36,15 @@
 .name-picture{
     display: flex; 
     justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
 }
 
 .name-picture p{
     display: table-caption;
     word-spacing: unset;
+    width: min-content;
+    text-align: right;
 }
 
 .name-picture img{
@@ -81,7 +85,7 @@
     }
     .tag{
         font-size: var( --fontSize10);
-        padding: 3px 17px;
+        padding: 4px 15px;
     }
     .containerHostTags{
         gap: 10px;

@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
-    margin: 85px 0px 85px 0px;
+    gap: 110px;
+    margin: 90px 0px 85px 0px;
 }
 
 .section_error a{
@@ -12,18 +12,18 @@
     font-size: var( --fontSize18);    
 }
 .section_error h1{
-    font-weight: 700;
+    font-weight: 900;
     font-size: 288px;
 }
 
-.oups{
+.errorMessage{
     font-size: var( --fontSize36);
 }
 @media screen and (max-width: 768px) {
     .section_error h1{
         font-size: 96px;
     }
-    .oups{
+    .errorMessage{
         font-size: var( --fontSize18);
         text-align: center;
     }

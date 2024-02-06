@@ -46,7 +46,7 @@ html{
 
 .Main{
  
-    margin: 0% 5%;
+    margin: 0% 7%;
 }
 body{
     margin: 0px;
@@ -90,8 +90,22 @@ body{
     }
     .Hero p{
         font-size: var( --fontSize24);
-        top: 25%;
+        top: 35%;
         line-height: normal;
         margin-left: 15px;
+        width: 90%;
     }
+    .Main{
+        margin: 0% 5%;
+    }
+ }
+ @media screen and (max-width: 425px) {
+    .Hero p{
+        font-size: var( --fontSize24);
+        top: 30%;
+        line-height: normal;
+        margin-left: 15px;
+        justify-content: start;
+    }
+
  }

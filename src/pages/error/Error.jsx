@@ -11,7 +11,7 @@ function Error() {
         <Header />
         <section className='section_error'>
         <h1 className='chiffre'>404</h1>
-        <div className='oups'>Oups! La page que vous demandez n'existe pas.</div>
+        <div className='errorMessage'>Oups! La page que vous demandez n'existe pas.</div>
         <Link to ="/" >Retourner sur la page d'accueil</Link>
         </section>
       </div>
